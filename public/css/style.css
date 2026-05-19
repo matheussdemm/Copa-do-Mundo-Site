@@ -1,112 +1,248 @@
-/* Reset básico */
+/* =========================
+   PORTAL ESPORTIVO PROFISSIONAL
+========================= */
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F7FA;
     margin: 0;
     padding: 0;
+    color: #1F2937;
 }
 
-/* Container */
+/* Container central */
 .container {
-    width: 90%;
-    margin: 20px auto;
+    width: 92%;
+    max-width: 1200px;
+    margin: 25px auto;
 }
 
-/* Título */
+/* Título principal (estilo jornal esportivo) */
 h1 {
     text-align: center;
-    color: #2c3e50;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: #0B3D0B;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/* Subtítulos */
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #15803D;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 /* Barra de filtros */
 form {
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #FFFFFF;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border: 1px solid #E5E7EB;
 }
 
 /* Inputs */
-select, input, button {
-    padding: 8px;
+select,
+input {
+    padding: 10px;
     margin-right: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border-radius: 8px;
+    border: 1px solid #D1D5DB;
+    background-color: #fff;
+    color: #111;
+    outline: none;
+    transition: 0.3s;
 }
 
-/* Botão */
+select:focus,
+input:focus {
+    border-color: #16A34A;
+    box-shadow: 0 0 0 3px rgba(22,163,74,0.15);
+}
+
+/* Botão principal */
 button {
-    background-color: #3498db;
+    background-color: #16A34A;
     color: white;
     border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
     cursor: pointer;
+    transition: 0.3s;
 }
 
+/* Hover botão */
 button:hover {
-    background-color: #2980b9;
+    background-color: #15803D;
+    transform: translateY(-2px);
 }
 
-/* Tabela */
+/* Tabela estilo portal esportivo */
 table {
     width: 100%;
     border-collapse: collapse;
-    background: #ffffff;
-    border-radius: 8px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
-/* Cabeçalho */
+/* Cabeçalho da tabela */
 th {
-    background-color: #3498db;
+    background-color: #0B3D0B;
     color: white;
-    padding: 10px;
-    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
 }
 
 /* Linhas */
 td {
-    padding: 10px;
+    padding: 14px;
     text-align: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #E5E7EB;
 }
 
-/* Zebra (linhas alternadas) */
+/* Zebra leve */
 tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #F9FAFB;
 }
 
-/* Hover */
+/* Hover profissional */
 tr:hover {
-    background-color: #eaf4fb;
+    background-color: #ECFDF5;
+    transition: 0.2s;
 }
 
-/* Links (Editar/Excluir) */
+/* Links */
 a {
+    color: #16A34A;
     text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 a:hover {
+    color: #0B3D0B;
     text-decoration: underline;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    color: #777;
+    padding: 25px;
+    color: #6B7280;
+    font-size: 14px;
 }
 
-h2 {
-    color: #34495e;
-}
-
+/* Linha separadora */
 hr {
     border: 0;
     height: 1px;
-    background: #ddd;
-    margin: 20px 0;
+    background: #E5E7EB;
+    margin: 25px 0;
+}
+
+/* Cards de destaque */
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    select,
+    input,
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
+
+.form-row {
+
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+
+    flex-wrap: wrap;
+}
+
+.form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    min-width: 220px;
+}
+
+.form-group label {
+
+    margin-bottom: 8px;
+
+    font-weight: 600;
+
+    color: #374151;
+}
+
+.form-button {
+
+    justify-content: end;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+    .form-row {
+
+        flex-direction: column;
+    }
+
+    .form-group {
+
+        width: 100%;
+    }
+
+    .form-button {
+
+        width: 100%;
+    }
+
+    .form-button button {
+
+        width: 100%;
+    }
 }
