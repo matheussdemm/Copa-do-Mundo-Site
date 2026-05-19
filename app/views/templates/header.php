@@ -26,3 +26,18 @@
 </nav>
 
 <hr>
+
+<?php if(isset($_SESSION['mensagem'])): ?>
+
+    <div class="alert <?= $_SESSION['tipo'] ?>">
+
+        <?= $_SESSION['mensagem']; ?>
+
+    </div>
+
+    <?php
+        unset($_SESSION['mensagem']);
+        unset($_SESSION['tipo']);
+    ?>
+
+<?php endif; ?>

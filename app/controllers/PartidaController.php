@@ -27,7 +27,11 @@ class PartidaController {
 
             $this->partida->cadastrar($_POST);
 
-            header("Location: index.php");
+            $_SESSION['mensagem'] = "✅ Partida cadastrada com sucesso!";
+
+$_SESSION['tipo'] = "sucesso";
+
+header("Location: index.php");
             exit;
         }
 
@@ -41,7 +45,11 @@ class PartidaController {
 
             $this->partida->editar($_POST, $id);
 
-            header("Location: index.php");
+            $_SESSION['mensagem'] = "✏️ Partida atualizada com sucesso!";
+
+$_SESSION['tipo'] = "editar";
+
+header("Location: index.php");
             exit;
         }
 
@@ -55,7 +63,11 @@ class PartidaController {
 
         $this->partida->excluir($id);
 
-        header("Location: index.php");
+        $_SESSION['mensagem'] = "🗑️ Partida excluída com sucesso!";
+
+$_SESSION['tipo'] = "excluir";
+
+header("Location: index.php");
         exit;
     }
 }
