@@ -1,4 +1,7 @@
 <hr>
-<p>Projeto PHP - Copa do Mundo</p>
+<footer>
+    <p>Projeto PHP - Copa do Mundo</p>
+</footer>
+
 </body>
 </html>

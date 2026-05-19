@@ -44,7 +44,7 @@ $result = mysqli_query($conn, $sql);
         <option>Semifinal</option>
         <option>Quartas</option>
         <option>Oitavas</option>
-        <option>Group</option>
+        <option>Grupos</option>
     </select>
 
     <button type="submit">Buscar</button>

@@ -10,6 +10,8 @@ header('Content-Type: text/html; charset=utf-8');
 </head>
 <body>
 
+<div class="container">
+
 <h1>⚽ Sistema Copa do Mundo</h1>
 
 <a href="index.php">Home</a> |

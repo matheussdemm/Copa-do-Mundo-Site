@@ -99,3 +99,14 @@ footer {
     padding: 10px;
     color: #777;
 }
+
+h2 {
+    color: #34495e;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
