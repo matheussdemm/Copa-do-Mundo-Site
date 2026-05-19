@@ -1,3 +1,4 @@
+<?php include("../app/views/templates/header.php"); ?>
 <form method="POST">
 
     <div class="form-row">
